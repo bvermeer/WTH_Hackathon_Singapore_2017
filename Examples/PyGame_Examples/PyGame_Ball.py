@@ -1,4 +1,12 @@
 #!/usr/bin/python2.7
+'''
+Description: This is a simple GUI app which creates a bouncing ball animation.
+
+Created: September 15, 2017
+
+Author: Blake Vermeer
+'''
+
 import sys, pygame, os
 
 os.putenv('DISPLAY', ':0')

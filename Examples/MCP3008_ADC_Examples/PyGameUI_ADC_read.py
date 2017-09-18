@@ -1,5 +1,8 @@
 #!/usr/bin/python2.7
 '''
+Description: This PyGameUI program allows you to switch between any ADC inputs and view the voltage being
+             applied to that input.
+
 Created on Jul 26, 2014
 
 @author: jeremyblythe
