@@ -35,6 +35,9 @@ pygame.mouse.set_visible(False)
 
 lcd = pygame.display.set_mode((320, 240), pygame.FULLSCREEN)
 lcd.fill((0,0,0))
+text_surface = pygame.font.Font(None, 50).render('Press a button...', True, WHITE)
+rect = text_surface.get_rect(center=(160,120))
+lcd.blit(text_surface, rect)
 pygame.display.update()
 
 font_big = pygame.font.Font(None, 100)
