@@ -153,7 +153,7 @@ Write down the IP address of the interface you would like to use. We are now goi
 
 	\subsection{Windows}
 	
-		\begin{itemize}
+		\begin{enumerate}[1.)]
 			\item Download and install the PuTTY program if you do not have it already. Link: \href{https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html}{PuTTY}
 			
 			\item Launch the PuTTY program.
@@ -173,11 +173,11 @@ Write down the IP address of the interface you would like to use. We are now goi
 			
 			\item At this point you will be dropped into a Bash command prompt on the Raspberry Pi.
 			
-		\end{itemize}
+		\end{enumerate}
 	
 	\subsection{Mac OS X and Linux}
 	
-		\begin{itemize}
+		\begin{enumerate}[1.)]
 			\item Open up a terminal
 			
 			\item Using the IP address you wrote down in the previous step, type in: \code{ssh pi@\{IP Address\}}
@@ -186,7 +186,7 @@ Write down the IP address of the interface you would like to use. We are now goi
 			
 			\item At this point you will be dropped into a Bash command prompt on the Raspberry Pi.
 			
-		\end{itemize}
+		\end{enumerate}
 
 
 
@@ -217,7 +217,47 @@ All of the example programs are Python programs. To run any of the example progr
 %----------------------------------------------------------------------------------------
 \section{Transferring files with SCP}
 
-Files can be transferred to and from the Raspberry Pi using the SCP protocol. Follow 
+Files can be transferred to and from the Raspberry Pi using the SCP protocol. Follow the directions below for the operating system that you are using.
+
+
+	\subsection{Windows}
+	
+	To be able to transfer files to and from the Raspberry Pi using Windows, we first need to download and install the WinSCP program.
+	
+	
+		\begin{enumerate}[1.)]
+			\item Download and install the \href{https://winscp.net/download/WinSCP-5.11.1-Setup.exe}{WinSCP} program.
+			
+			\item After installing the WinSCP program, launch the program. You will be presented with the login screen which will look similar to Figure \ref{WinSCP_Login}.
+			
+				\begin{figure}[H]
+					\centering
+					\includegraphics[width=\textwidth / 2]{pics/WinSCP_login.png}
+					\caption{WinSCP Login Screen}
+					\label{WinSCP_Login}
+				\end{figure}
+			
+			\item In the File Protocol drop-down box, select \textbf{SCP}.
+			
+			\item In the "Host Name" box, enter the IP address of your Raspberry Pi.
+			
+			\item In the "User name" box, enter \textbf{pi}.
+			
+			\item In the "Password" box, enter \textbf{keysight}
+			
+			\item Click the \textbf{login} button. At this point you should be connected to the Raspberry Pi and be able to browse the Raspberry Pi's file system and transfer files.
+			
+		\end{enumerate}
+	
+
+	
+	
+	\subsection{Mac OS X}
+	
+	With Mac OS X there are a few different ways that you can go about using SCP with the Raspberry Pi. You can either use the SCP utility from the command line for transferring files or you can download and install MacFusion to allow you to browse the Raspberry Pi's file system through Finder.
+	
+	
+	\subsection{Linux}
 
 
 
