@@ -254,11 +254,47 @@ Files can be transferred to and from the Raspberry Pi using the SCP protocol. Fo
 	
 	\subsection{Mac OS X}
 	
-	With Mac OS X there are a few different ways that you can go about using SCP with the Raspberry Pi. You can either use the SCP utility from the command line for transferring files or you can download and install MacFusion to allow you to browse the Raspberry Pi's file system through Finder.
+	With Mac OS X there are a few different ways that you can go about using SCP with the Raspberry Pi. You can either use the SCP utility from the command line for transferring files or you can download and install \href{http://macfusionapp.org/}{MacFusion} to allow you to browse the Raspberry Pi's file system through Finder. \\
 	
+	The general usage for the SCP command is: \code{scp \{source file\} \{destination file\}}
+	
+		\subsubsection{Transferring a Single File to the Raspberry Pi}
+		
+		\begin{enumerate}[1.)]
+			\item Open a terminal.
+			
+			\item Run this command: \code{scp \{file to transfer\} pi@\{IP Address of Pi\}:\{Location to transfer file to\}}
+		\end{enumerate}
+	
+		\subsubsection{Transferring a Single File from the Raspberry Pi}
+	
+		\begin{enumerate}[1.)]
+			\item Open a terminal.
+			
+			\item Run this command: \code{scp pi@\{IP Address of Pi\}:\{Location of file to transfer\} \{location to save file\}} 
+		\end{enumerate}
 	
 	\subsection{Linux}
 
+	With Linux there are a few different ways that you can go about using SCP with the Raspberry Pi. You can either use the SCP utility from the command line for transferring files or several file browsers in Linux natively support mounting a SSH file system with SCP. For most common file browsers the option to mount the remote file system is usually under the \code{File -> Connect to Server...} menu option. \\
+	
+	The general usage for the SCP command is: \code{scp \{source file\} \{destination file\}}
+	
+	\subsubsection{Transferring a Single File to the Raspberry Pi}
+	
+	\begin{enumerate}[1.)]
+		\item Open a terminal.
+		
+		\item Run this command: \code{scp \{file to transfer\} pi@\{IP Address of Pi\}:\{Location to transfer file to\}}
+	\end{enumerate}
+	
+	\subsubsection{Transferring a Single File from the Raspberry Pi}
+	
+	\begin{enumerate}[1.)]
+		\item Open a terminal.
+		
+		\item Run this command: \code{scp pi@\{IP Address of Pi\}:\{Location of file to transfer\} \{location to save file\}} 
+	\end{enumerate}
 
 
 %----------------------------------------------------------------------------------------
